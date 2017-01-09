@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{	
+background-image: url(../images/DiazepamBackground.png)
+}
+
+
+
+#Banner
+{
+background-color:#CD8CFF;
+text-align:center;
+font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif
+}
+
+#Navbar
+{
+	
+	text-align: center;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;	
+}
+
+#Content
+{
+
+}
+
+#Footer
+{
+
+}
+
