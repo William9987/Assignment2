@@ -1,33 +1,164 @@
 @charset "utf-8";
+
 /* CSS Document */
+
 body
 {	
-background-image: url(../images/DiazepamBackground.png)
-}
-
-
-
-#Banner
-{
-background-color:#CD8CFF;
-text-align:center;
-font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif
+background-image:url(../images/diazepambackground.png)
 }
 
 #Navbar
 {
-	
 	text-align: center;
-	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;	
+	font-family:reenie-beanie;
+	font-style: bold;
+	font-weight: 500;
+	font-size:30px;
+	
+}
+
+#Banner
+{
+	font-family: miama, dancing-script;
+	font-style: normal;
+	font-weight: 800;
+	font-size: 28px;
+	margin-top: 5%;
+	padding-left: 5%;
+	overflow: hidden;
+	background-image: url("../images/contentbackground(tile).png")
 }
 
 #Content
 {
+	font-family:dancing-script;
+	font-style: normal;
+	font-weight:bold;
+	font-size: 20px;
+	margin-top: 5%;
+	padding-left: 5%;
+	overflow:hidden;
+	width: 100%;
+	background-image: url("../images/contentbackground(tile).png")
+}
+
+/* Events*/
+#upcoming1
+{
+	font-family:dancing-script;
+	font-style: normal;
+	font-weight:bold;
+	font-size: 20px;
+	margin-top: 2%;
+	padding-left: 5%;
+	overflow:auto;
+	width: 100%;
+	background-image: url("../images/contentbackground(tile).png")	
+	
+}
+
+#upcoming2
+{
+	font-family:dancing-script;
+	font-style: normal;
+	font-weight:bold;
+	font-size: 20px;
+	margin-top: 2%;
+	padding-left: 5%;
+	overflow:auto;
+	width: 100%;
+	background-image: url("../images/contentbackground(tile).png")	
+	
+}
+
+#upcoming3
+{
+	font-family:dancing-script;
+	font-style: normal;
+	font-weight:bold;
+	font-size: 20px;
+	margin-top: 2%;
+	padding-left: 5%;
+	overflow:auto;
+	width: 100%;
+	background-image: url("../images/contentbackground(tile).png")	
+	
+}
+
+#upcoming4
+{
+	font-family:dancing-script;
+	font-style: normal;
+	font-weight:bold;
+	font-size: 20px;
+	margin-top: 2%;
+	padding-left: 5%;
+	overflow:auto;
+	width: 100%;
+	background-image: url("../images/contentbackground(tile).png")	
+	
+}
+
+#Product
+{
 
 }
 
+/* Product Gallery*/
+div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+
 #Footer
 {
-
+	font-family: yellowtail;
+	font-style: normal;
+	font-weight: 400;
 }
 
