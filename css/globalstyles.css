@@ -51,10 +51,9 @@ background-image:url(../images/diazepambackground.png)
 	font-size: 20px;
 	margin-top: 2%;
 	padding-left: 5%;
-	overflow:auto;
+	overflow-y:scroll;
 	width: 100%;
 	background-image: url("../images/contentbackground(tile).png")	
-	
 }
 
 #upcoming2
@@ -68,6 +67,7 @@ background-image:url(../images/diazepambackground.png)
 	overflow:auto;
 	width: 100%;
 	background-image: url("../images/contentbackground(tile).png")	
+	
 	
 }
 
@@ -116,7 +116,7 @@ ul.enlarge li {
 display:inline-block; /*places the images in a line*/
 position: relative; 
 z-index: 0; 
-margin:5% 6% 35% 3%; /*space between the images*/
+margin:5% 3% 50% 3%; /*space between the images*/
 }
 
 ul.enlarge span{
