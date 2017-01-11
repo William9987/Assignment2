@@ -65,9 +65,9 @@ ul.topnav li.right {float: right;}
 <body>
 <ul class="topnav" id="Navbar">
   <li><a href="../index.html"><h2>Home</h2></a></li>
-  <li><a href="../products.html"><h2>Products</h2></a></li>
+  <li><a href="../icecream.html"><h2>Ice Cream</h2></a></li>
   <li><a href="../upcoming.html"><h2>Upcoming Events</h2></a></li>
-  <li><a href="../Contact.html"><h2>Contact</h2></a></li>
+  <li><a href="../contact.html"><h2>Contact</h2></a></li>
 </ul>
 
 
