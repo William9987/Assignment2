@@ -120,14 +120,14 @@ div.desc {
 /*Enlarge images*/
 ul.enlarge {
 list-style-type:none; 
-width:auto;
+float:right;
 }
 
 ul.enlarge li {
 display:inline-block; /*places the images in a line*/
 position: relative; 
 z-index: 0; 
-padding:5% 3% 50% 3%; /*space between the images*/
+padding:5% 5% 20% 5%; /*space between the images*/
 }
 
 ul.enlarge span{
@@ -136,9 +136,11 @@ left: -9999px; /*moves the span off the page*/
 }
 
 ul.enlarge img{
-width:auto;	
+float:right;
 background-color:#eae9d4; 
 padding: 5%; 
+max-width:300px;
+max-height:200px;
 -webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
 -moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
 box-shadow: 0 0 6px rgba(132, 132, 132, .75);
@@ -182,7 +184,7 @@ left: -200px;
 
 @media only screen and (max-width: 500px){
     .responsive {
-        width: auto;
+        width: 100%;
     }
 }
 
