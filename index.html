@@ -50,9 +50,29 @@ ul.topnav li a.active {background-color:#002DAA;}
 
 ul.topnav li.right {float: right;}
 
-@media screen and (max-width: 600px){
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
 </style>
 
@@ -88,23 +108,28 @@ We in DiazePam Café live and breathe ice cream and desserts. We are an independ
 
 <div class="slideshow-container">
   <div class="mySlides fade">
-    <div class="numbertext">1 / 3</div>
-    <img src="images/cafe/hipsterlogogenerator_1434522734796.png" style="width:100%">
+    <div class="numbertext">1 / 4</div>
+    <img src="images/cafe/hipsterlogogenerator_1434522734796.png" style="width:100%" alt="">
     <div class="text">Diazepam</div>
   </div>
   
   <div class="mySlides fade">
-    <div class="numbertext">2 / 3</div>
-    <img src="images/cafe/Cafe.PNG" style="width:100%">
+    <div class="numbertext">2 / 4</div>
+    <img src="images/cafe/Cafe.PNG" style="width:100%" alt="">
     <div class="text">Diazepam Cafe</div>
   </div>
 
   <div class="mySlides fade">
-    <div class="numbertext">3 / 3</div>
-    <img src="img3.jpg" style="width:100%">
-    <div class="text">Caption Three</div>
+    <div class="numbertext">3 / 4</div>
+    <img src="images/ice cream/products/large.jpg" style="width:100%" alt="">
+    <div class="text1">Ice Cream Platter</div>
   </div>
 
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="images/ice cream/products/tumblr_mrx5byBJN51r7guzvo1_500.jpg" style="width:100%" alt="">
+    <div class="text">Ice Cream!!!</div>
+  </div>
   
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -117,6 +142,7 @@ We in DiazePam Café live and breathe ice cream and desserts. We are an independ
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
 </div>
 
 <script>
