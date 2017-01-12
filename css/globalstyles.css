@@ -113,21 +113,24 @@ background-image:url(../images/background/diazepambackground.png)
 
 /* Ice Cream Gallery*/
 div.desc {
-    padding-top: 15px;
+    padding-top: 6%;
     text-align:center;
+	
 }
 
 /*Enlarge images*/
 ul.enlarge {
 list-style-type:none; 
 float:right;
+margin-bottom:40%
+
 }
 
 ul.enlarge li {
 display:inline-block; /*places the images in a line*/
 position: relative; 
 z-index: 0; 
-padding:5% 5% 20% 5%; /*space between the images*/
+padding:5% 5% 50% 5%; /*space between the images*/
 }
 
 ul.enlarge span{
@@ -138,15 +141,16 @@ left: -9999px; /*moves the span off the page*/
 ul.enlarge img{
 float:right;
 background-color:#eae9d4; 
-padding: 5%; 
+padding: 3%; 
 max-width:300px;
-max-height:200px;
+max-height:350px;
 -webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
 -moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
 box-shadow: 0 0 6px rgba(132, 132, 132, .75);
 -webkit-border-radius: 4px;
 -moz-border-radius: 4px;
 border-radius: 4px;
+margin:5%;
 }
 
 ul.enlarge li:hover{
