@@ -167,6 +167,13 @@ article {
 </table>
 </nav>
 <article><form id="OrderForm">
+<form action="" method="post" name="mainForm" id="mainForm" onsubmit="return checkForm();">
+        <p>
+            <label for="name">Your Name: 
+            <img src="images/cross.png" alt="X" name="nameTick" width="12" height="12"
+                                              id="nameTick"/></label>
+            <input type="text" name="name" id="name" size="40" autofocus onKeyUp="nameEntered(this);"/>
+        </p>
 <p>What flavor do you want for your order?
     <br/>
         <label for="WhatFlavor">Flavor 1 ($3.00)</label>
@@ -190,7 +197,8 @@ article {
             <option value="SaltedCaramel">Salted Caramel</option>
             <option value="SweetCorn">Sweet Corn</option>
         </select>
-      </p></form>
+      </p>
+      </form>
      <button type="submit" form="OrderForm" value="Submit">Submit</button>
       </article>
 </p></div>
