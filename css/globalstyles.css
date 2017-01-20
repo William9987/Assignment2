@@ -32,6 +32,7 @@ background-image:url(../images/background/diazepambackground.png)
 	background-image:url("../images/background/contentbackground(tile).png")
 }
 
+
 #Content
 {
 	font-family:dancing-script;
@@ -324,5 +325,14 @@ float:right;
 max-height:90px;
 max-width:80px;
 margin-right:10%;
+position:relative;
+margin-top:1%;
+display:inline-block;
 background-color:#EF452E;
+}
+
+#buttonholder
+{
+margin-left:auto;
+margin-right:auto;
 }

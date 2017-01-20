@@ -91,17 +91,20 @@ ul.topnav li.right {float: right;}
 </ul>
 
 
-
 <!-- TemplateBeginEditable name="Body" -->
-<div id="Banner"><p>Title</p></div>
+<div id="Banner"><p>Title</p>
+</div>
+
 <div id="Content"><p>Body</p></div>
 <!-- TemplateEndEditable -->
-<div id="Footer"><p>&copy Diazepam Cafe<br>
-
-All Rights Reserved.
- </p>
+<div id="feedbacklogo"><img src="../images/thumbnail/logos/0ca97caf94bb261a74691867a53274e2.png" alt="" width="80" height="90" />
 </div>
-<div id="feedbacklogo">
-    <img src="../images/thumbnail/logos/0ca97caf94bb261a74691867a53274e2.png"/></div>
+
+<div id="Footer"><p>&copy Diazepam Cafe<br>
+All Rights Reserved.
+
+ </p>
+   
+</div> 
 </body>
 </html>
