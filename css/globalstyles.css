@@ -62,7 +62,7 @@ background-image:url(../images/background/diazepambackground.png)
 	font-size: 20px;
 	margin-top: 2%;
 	padding-left: 5%;
-	overflow:auto;
+	overflow-y:hidden;
 	width: auto;
 	background-image:url("../images/background/contentbackground(tile).png")
 }
