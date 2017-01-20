@@ -1,0 +1,226 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/diazepam.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Order Form</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<link href="css/globalstyles.css" rel="stylesheet" type="text/css">
+<style>
+body {margin: 0;}
+
+ul.topnav {
+	width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	background-color:#50C0A8;
+   
+}
+
+ul.topnav li {
+float: left;
+width:25%;
+margin:0;
+padding:0;
+}
+
+
+ul.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+	background-color: #FFFFFF;
+	font-family: reenie-beanie;
+	font-style: normal;
+	font-weight: 500;
+	font-size:30px;
+}
+
+ul.topnav li a.active {background-color:#002DAA;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+
+
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/reenie-beanie:n5:default;yellowtail:n4:default;dancing-script:n4:default;miama:n4:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+<ul class="topnav" id="Navbar">
+  <li><a href="index.html"><h3>Home</h3></a></li>
+  <li><a href="icecream.html"><h3>Ice Cream</h3></a></li>
+  <li><a href="upcoming.html"><h3>Upcoming Events</h3></a></li>
+  <li><a href="contact.html"><h3>Contact</h3></a></li>
+</ul>
+
+
+<!-- InstanceBeginEditable name="Body" -->
+
+<div id="Banner"><p>FOOD! Glorious food!</p></div>
+<div id="Content"><p id="flavors">
+<style>
+div.container {
+    width: 90%;
+    border: 1px solid gray;
+	padding-bottom: 30%;
+	margin:auto;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 50%;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 10px;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+	border:thin;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Ice Cream Cakes!</h1>
+</header>
+  <nav>
+  <table width="50%" border="0" cellspacing="10" cellpadding="10">
+  <tbody>
+    <tr>
+      <td><img src="images/Thumbnail/flavor/dark chocolate.jpg" width="150" height="120" alt=""/>
+      <br>Dark Choolate</td>
+      <td><img src="images/Thumbnail/flavor/frappucino.jpg" width="150" height="120" alt=""/>
+     <br>Frappucino </td>
+    </tr>
+    <tr>
+      <td><img src="images/Thumbnail/flavor/grape nuts.jpg" width="150" height="120" alt=""/> 
+     <br>Grape Nuts </td>
+      <td><img src="images/Thumbnail/flavor/machiatto.jpg" width="150" height="120" alt=""/>
+     <br>Machiatto </td>
+    </tr>
+    <tr>
+      <td><img src="images/Thumbnail/flavor/salted caramel.jpg" width="150" height="120" alt=""/>
+      <br>Salted Caramel</td>
+      <td><img src="images/Thumbnail/flavor/sweet corn.jpg" width="150" height="120" alt=""/>
+     <br>Sweet Corn</td>
+    </tr>
+  </tbody>
+</table>
+</nav>
+<article><form id="OrderForm" method="post" onsubmit="return checkForm();">
+      <p>
+            <label for="name">Your Name: 
+            <img src="images/cross.png" alt="X" name="nameTick" width="12" height="12"
+                                              id="nameTick"/></label>
+            <input type="text" name="name" id="name" size="40" autofocus onKeyUp="nameEntered(this);"/>
+        </p>
+<p>What flavor do you want for your order?
+    <br/>
+        <label for="WhatFlavor">Flavor 1 ($3.00)</label>
+        <select name="WhatFlavor" id="WhatFlavor">
+            <option value="PleaseChooseOne">-Please Choose One-</option>
+            <option value="DarkChocolate">Dark Chocolate</option>
+            <option value="Frappucino">Frappucino</option>
+            <option value="GrapeNuts">Grape Nuts</option>
+            <option value="Machiatto">Machiatto</option>
+            <option value="SaltedCaramel">Salted Caramel</option>
+            <option value="SweetCorn">Sweet Corn</option>
+        </select>
+        
+        <label for="WhatFlavorTwo">Flavor 2 (Add $2.50)</label>
+        <select name="WhatFlavorTwo" id="WhatFlavorTwo">
+            <option value="None">-None-</option>
+            <option value="DarkChocolate">Dark Chocolate</option>
+            <option value="Frappucino">Frappucino</option>
+            <option value="GrapeNuts">Grape Nuts</option>
+            <option value="Machiatto">Machiatto</option>
+            <option value="SaltedCaramel">Salted Caramel</option>
+            <option value="SweetCorn">Sweet Corn</option>
+        </select>
+      </p>
+We ship our products free of any shipping fees to your doorstep!
+
+      <br> Address 1
+     <br> <input name="Ad1" type="text" id="Ad1" size="75">
+     <br> Postal Code
+     <br> <input name="Ad2" type="num" id="Ad2" size="75">
+          <br><input type="submit" id="" value= "Submit"/>
+   
+          <input type="reset" value="Reset" name="Reset" id="Reset" onclick="return resetForm()" />
+    </form></article>
+</div>
+<script type="text/javascript" src="scripts.js"></script>
+
+
+<!-- InstanceEndEditable -->
+
+<a href="feedback.html"><img src="images/thumbnail/logos/0ca97caf94bb261a74691867a53274e2.png" alt="" width="80" height="90" class="feedbacklogo" /></a>
+
+
+<div id="Footer"><p>&copy Diazepam Cafe<br>
+All Rights Reserved.
+
+ </p>
+   
+</div> 
+</body>
+<!-- InstanceEnd --></html>
