@@ -12,7 +12,7 @@ function checkForm() {
     var errors = false;
     var errorMsg = "";
 // basic check required fields
-    if (d.name.value == "") {
+    if (d.name.value === "") {
         errorMsg += "Please enter your name.\n";
         errors = true;
     }
