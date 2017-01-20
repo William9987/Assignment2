@@ -8,27 +8,40 @@
 
 // check required fields have been set, return true/false depending on these
 function checkForm() {
-    var d = document.getElementById('mainForm'); // just a shortcut
+    var d = document.getElementById('OrderForm'); // just a shortcut
     var errors = false;
     var errorMsg = "";
 // basic check required fields
-    if (d.name.value === "") {
+    if (d.name.value == "") {
         errorMsg += "Please enter your name.\n";
         errors = true;
     }
-    // check if one of the radio buttons for site rating is selected
-    var checkedSiteRating = false;
-    for (var i = 0; i < 3; i++) {
-        if (d.siterating[i].checked)
-            checkedSiteRating = true;
-    }
-    if (!checkedSiteRating) {
-        errorMsg += "Please select a site rating.\n";
+	
+	if (d.WhatFlavor.value == "PleaseChooseOne") {
+        errorMsg += "Please select a flavor.\n";
         errors = true;
     }
+	
+	if (d.WhatFlavorTwo.value == "None") {
+        errorMsg += "Please select a Secondary flavor.\n";
+        errors = true;
+    }
+	
+	if (d.Ad1.value == "") {
+        errorMsg += "Please enter your address.\n";
+        errors = true;
+    }
+	
+	if (d.Ad2.value == "") {
+        errorMsg += "Please enter your postal code.\n";
+        errors = true;
+    }
+	
 // if errors exist, popup error message 
     if (errors)
         alert(errorMsg);
+	else 
+		alert("Your order has been submitted.")
 // return true (submit form) or false (don't submit form) depending on errors
     return !errors;
 }
@@ -87,14 +100,13 @@ function setColourBasedOnLength(name, minValue) {
 // when name is entered, set tick image, say "hi" by writing to the page using innerHTML
 // innerHTML can be useful for debugging messages, since it doesn't make a modal window like alert does.
 function nameEntered(name) {
-    document.getElementById("output").innerHTML = "Hi " + name.value;
     if (name.value != "") {
-        document.mainForm.nameTick.src = "tick.png";
-        document.mainForm.nameTick.alt = "tick";
+        document.getElementById("OrderForm").nameTick.src = "images/tick.png";
+        document.getElementById("OrderForm").nameTick.alt = "tick";
     }
     else {
-        document.mainForm.nameTick.src = "cross.png";
-        document.mainForm.nameTick.alt = "cross";
+        document.getElementById("OrderForm").nameTick.src = "images/cross.png";
+        document.getElementById("OrderForm").nameTick.alt = "cross";
     }
 }
 
@@ -196,5 +208,8 @@ function loadState() {
     xhr.send();
 }
 
+
+
+
 // Attach event handler to state button
-document.getElementById("setStateButton").addEventListener("click", loadState);
+//document.getElementById("setStateButton").addEventListener("click", loadState);

@@ -84,10 +84,10 @@ ul.topnav li.right {float: right;}
 
 <body>
 <ul class="topnav" id="Navbar">
-  <li><a href="index.html"><h2>Home</h2></a></li>
-  <li><a href="icecream.html"><h2>Ice Cream</h2></a></li>
-  <li><a href="upcoming.html"><h2>Upcoming Events</h2></a></li>
-  <li><a href="contact.html"><h2>Contact</h2></a></li>
+  <li><a href="index.html"><h3>Home</h3></a></li>
+  <li><a href="icecream.html"><h3>Ice Cream</h3></a></li>
+  <li><a href="upcoming.html"><h3>Upcoming Events</h3></a></li>
+  <li><a href="contact.html"><h3>Contact</h3></a></li>
 </ul>
 
 
@@ -95,17 +95,17 @@ ul.topnav li.right {float: right;}
 <div id="Banner"><p>Feedback Form</p></div>
 <div id="Content"><p>
 Your feedback is valuable to us at diazepam.
- <form id="FeedBackForm" name="FeedBackForm" method="post" action="FormProcessor.php">
+ <form id="FeedBackForm" name="FeedBackForm"  method="post" onsubmit="return ValidateForm();">
  
  <table width="670" border="0" cellspacing="0" cellpadding="0">
     <tr>
        <th width="165" height="34" scope="row"><h4>First Name :</h4></th><!--First Name-->
-       <td width="505"><input name="FirstName" type="text" id="FirstName" /></td>
+       <td width="505"><input name="FirstName" type="text" id="FirstName" maxlength="50" /></td>
     </tr>
           
     <tr>
          <th height="32" scope="row"><h4>Last Name :</h4></th><!--Last Name-->
-         <td><input type="text" name="LastName" id="LastName" /></td>
+         <td><input type="text" name="LastName" id="LastName" maxlength="30" /></td>
     </tr>
     <tr>
          <th height="35" scope="row"><h4>Gender :</h4></th><!--Gender-->
@@ -116,29 +116,39 @@ Your feedback is valuable to us at diazepam.
           </tr>
        
     <tr>
-         <th height="32" scope="row"><h4>Email :</h4></th><!--Last Name-->
-         <td><input type="text" name="Email" id="Email" /></td>
+         <th height="32" scope="row"><h4>Email :</h4></th><!--email-->
+         <td><input type="text" name="Email" id="Email" maxlength="50" /></td>
     </tr>
-          
+    
+    <tr>
+ <th height="32" scope="row"><p><b><h4>Things that we can improve on :</h4></b><br></p></th>
+        
+        <td> <textarea name="Feedback" type="text" id="Feedback" rows="10" cols="50"> Enter your feedback here
+   </textarea>
+   
+   </td>
+   </tr>
           </table>
    <div id="buttonholder">
-         <form>
-          <input type="submit" name="Submit" id="Submit" value="Submit" src="FormProcessor.php" />
-          <input type="reset" name="Reset" id="Reset" value="Reset" />
+    <form>
+      <input type="submit" id="" value= "Submit"/>
+   
+       <input type="reset" value="Reset" name="Reset" id="Reset" onclick="return resetForm()" />
          </form>
          </div>
 </form>
 </p></div>
-<!-- InstanceEndEditable -->
+<script type="text/javascript" src="validation.js"></script>
 
+<!-- InstanceEndEditable -->
+<div id="feedbacklogo"><img src="images/thumbnail/logos/0ca97caf94bb261a74691867a53274e2.png" alt="" width="80" height="90" />
+</div>
 
 <div id="Footer"><p>&copy Diazepam Cafe<br>
 All Rights Reserved.
- </p>
- 
-</div>
-<p class="feedbacklogo"><img src="images/thumbnail/logos/0ca97caf94bb261a74691867a53274e2.png" alt="" width="80" height="90" /></p>
 
-    
+ </p>
+   
+</div> 
 </body>
 <!-- InstanceEnd --></html>

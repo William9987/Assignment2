@@ -84,10 +84,10 @@ ul.topnav li.right {float: right;}
 
 <body>
 <ul class="topnav" id="Navbar">
-  <li><a href="index.html"><h2>Home</h2></a></li>
-  <li><a href="icecream.html"><h2>Ice Cream</h2></a></li>
-  <li><a href="upcoming.html"><h2>Upcoming Events</h2></a></li>
-  <li><a href="contact.html"><h2>Contact</h2></a></li>
+  <li><a href="index.html"><h3>Home</h3></a></li>
+  <li><a href="icecream.html"><h3>Ice Cream</h3></a></li>
+  <li><a href="upcoming.html"><h3>Upcoming Events</h3></a></li>
+  <li><a href="contact.html"><h3>Contact</h3></a></li>
 </ul>
 
 
@@ -166,8 +166,7 @@ article {
   </tbody>
 </table>
 </nav>
-<article><form id="OrderForm">
-<form action="" method="post" name="mainForm" id="mainForm" onsubmit="return checkForm();">
+<article><form id="OrderForm" method="post" onsubmit="return checkForm();">
       <p>
             <label for="name">Your Name: 
             <img src="images/cross.png" alt="X" name="nameTick" width="12" height="12"
@@ -201,13 +200,17 @@ article {
 We ship our products free of any shipping fees to your doorstep!
 
       <br> Address 1
-     <br> <input name="Ad1" type="text" id="Ad2" size="75">
-     <br> Address 2
-     <br> <input name="Ad2" type="text" id="Ad2" size="75">
-          <br><button type="submit" form="OrderForm" value="Submit">Submit</button>
-    </form></form></article>
-</p></div>
+     <br> <input name="Ad1" type="text" id="Ad1" size="75">
+     <br> Postal Code
+     <br> <input name="Ad2" type="num" id="Ad2" size="75">
+          <br><input type="submit" id="" value= "Submit"/>
+   
+          <input type="reset" value="Reset" name="Reset" id="Reset" onclick="return resetForm()" />
+    </form></article>
+</div>
 <script type="text/javascript" src="scripts.js"></script>
+
+
 <!-- InstanceEndEditable -->
 <div id="feedbacklogo"><img src="images/thumbnail/logos/0ca97caf94bb261a74691867a53274e2.png" alt="" width="80" height="90" />
 </div>
