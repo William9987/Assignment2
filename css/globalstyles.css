@@ -318,4 +318,10 @@ left: -200px;
 	text-align:center;
 	
 }
-/*Responsive Web*/
+#feedbacklogo
+{
+float:right;
+margin-right:10%;
+margin-bottom:3%;
+background-color:#EF452E;
+}
