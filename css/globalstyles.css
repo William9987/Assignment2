@@ -321,7 +321,8 @@ left: -200px;
 #feedbacklogo
 {
 float:right;
+max-height:90px;
+max-width:80px;
 margin-right:10%;
-margin-bottom:3%;
 background-color:#EF452E;
 }
