@@ -319,14 +319,14 @@ left: -200px;
 	text-align:center;
 	
 }
-#feedbacklogo
+.feedbacklogo
 {
 float:right;
 max-height:90px;
 max-width:80px;
 margin-right:10%;
 position:relative;
-margin-top:1%;
+margin-top:0.5%;
 display:inline-block;
 background-color:#EF452E;
 }
