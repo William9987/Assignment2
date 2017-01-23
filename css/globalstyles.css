@@ -52,6 +52,7 @@ background-image:url(../images/background/diazepambackground.png)
     max-width:75%;
     margin: auto;
 	padding:3%;	
+	text-align:center;
 }
 
 /* Events*/
@@ -335,4 +336,10 @@ background-color:#EF452E;
 {
 margin-left:auto;
 margin-right:auto;
+}
+
+.icecreamdesc
+{
+	padding-top: 1%;
+    text-align:center;
 }
